@@ -121,7 +121,7 @@ Basically the hacker lets the victim's browser do everything: it attaches the co
 
 This demo was born after a discussion I had on Reddit about refresh tokens used to refresh access tokens. In this application we have the following auth system: users (technically after a login) get a refresh token that is used to get an access token. The refresh token is stored in a ``httpOnly`` cookie and the access token is stored in **memory**, so it's not easily accessible like in the case of a cookie or localstorage.
 
-[Here's a better explaination](https://github.com/f0lg0/CSRF-Demo-Tokens/storeTokens.md), if you already know this method then skip to the [Breakdown](#Breakdwon) section.
+[Here's a better explaination](https://github.com/f0lg0/CSRF-Demo-Tokens/blob/master/storeTokens.md), if you already know this method then skip to the [Breakdown](#Breakdwon) section.
 
 With the access token they can perform actions that normal users can't, in this demo we return the access token in case of a valid refresh token and that's it; no actions such as modifying account details, transferring money etc. 
 
