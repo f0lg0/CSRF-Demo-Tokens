@@ -1,0 +1,18 @@
+localhost with CORS enabled
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at ‘http://localhost:9090/get_access_token’. (Reason: Credential is not supported if the CORS header ‘Access-Control-Allow-Origin’ is ‘*’).
+
+192.168.1.x with CORS enabled
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at ‘http://192.168.1.51:9090/get_access_token’. (Reason: Credential is not supported if the CORS header ‘Access-Control-Allow-Origin’ is ‘*’).
+
+192.168.1.x with CORS disabled
+can still fetch normally but if credentials: include
+
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at ‘http://192.168.1.51:9090/get_access_token’. (Reason: Credential is not supported if the CORS header ‘Access-Control-Allow-Origin’ is ‘*’).
+
+127.0.0.1 cors disabled
+
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://127.0.0.1:9090/get_access_token. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
+
+127.0.0.1 cors enabled
+
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at ‘http://127.0.0.1:9090/get_access_token’. (Reason: Credential is not supported if the CORS header ‘Access-Control-Allow-Origin’ is ‘*’).

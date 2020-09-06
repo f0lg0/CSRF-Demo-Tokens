@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+</head>
+<style>
+    .center {
+        text-align: center;
+    }
+
+    .container {
+        height: 200px;
+        position: relative;
+    }
+
+    .center-btn {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<body>
+    <h1 class="center">Transfer Money to X</h1>
+    <h3 class="center red">CLICK ONLY IF YOU REALLY WANT TO TRANSFER 100$ to X</h3>
+
+    <div class="container">
+        <form class="center-btn" action="http://127.0.0.1:9090/transfer_money" method="POST">
+            <input type="submit" value="Send Money">
+        </form>
+    </div>
+
+    <!-- IT CAN BE DONE EVEN WITH JS -->
+    <!-- <script>
+        async function sendMoney() {
+            console.log("Sending...");
+
+            const response = await fetch('http://127.0.0.1:9090/transfer_money', {
+                method: 'POST',
+                credentials: 'include',
+            });
+
+            console.log(await response.json());
+        }
+    </script> -->
+</body>
+
+</html>
