@@ -4,8 +4,8 @@
   "description": "CSRF Demo with refresh and access tokens",
   "main": "server.js",
   "scripts": {
-      "start" : "node server.js",
-      "dev" : "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Leonardo Folgoni",
   "license": "MIT",
